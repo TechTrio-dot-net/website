@@ -36,7 +36,7 @@ const Footer = () => {
       <div className={`py-20 px-8 ${theme === "dark" ? "bg-black" : "bg-[#FFF9C4]"}`}>
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
           
-          {/* CTA Title - wider on large screens */}
+          {/* CTA Title */}
           <div className="w-full lg:w-3/4 text-center lg:text-left">
             <motion.h3
               key={pathname}
@@ -124,29 +124,29 @@ const Footer = () => {
             <li><Link href="#">Privacy Policy</Link></li>
           </ul>
         </div>
+
+        {/* Updated Location Section */}
         <div>
-  <h4 className="font-semibold mb-4 text-base">Location</h4>
-  <p className="font-medium">Head Office:</p>
-  <p>F-23, Shaligeam Crown,<br />Vijapur, Mehsana - 382870</p>
+          <h4 className="font-semibold mb-4 text-base">Location</h4>
+          
+          <p className="font-medium">Head Office:</p>
+          <p>F-23, Shaligeam Crown,<br />Vijapur, Mehsana - 382870</p>
 
-  <p className="mt-4 font-medium">Branch Office:</p>
-  <p>North Enclave,<br />Nr. Vaishnodevi Circle,<br />Ahmedabad - 382421</p>
+          <p className="mt-4 font-medium">Branch Office:</p>
+          <p>North Enclave,<br />Nr. Vaishnodevi Circle,<br />Ahmedabad - 382421</p>
 
-  <Link
-    href="/contact"
-    className="mt-6 inline-block bg-yellow-400 text-black px-4 py-2 rounded-md text-sm"
-  >
-    Contact Us
-  </Link>
-</div>
+          <Link
+            href="/contact"
+            className="mt-6 inline-block bg-yellow-400 text-black px-4 py-2 rounded-md text-sm"
+          >
+            Contact Us
+          </Link>
+        </div>
       </div>
 
       {/* TECHTRIO reveal from divider */}
       <div className="relative h-[100px] lg:h-[240px] overflow-hidden">
-        {/* Divider */}
         <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-400 dark:bg-gray-700 z-10" />
-
-        {/* Text Reveal */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -168,52 +168,50 @@ const Footer = () => {
 
       {/* Bottom Note */}
       <div className="border-t border-gray-300 dark:border-gray-700 px-8 py-6">
-  <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between">
-    
-    {/* Left Side: Text */}
-    <div className="text-sm text-gray-600 dark:text-gray-400 text-center sm:text-left">
-      <p>© 2025 TechTrio. All rights reserved.</p>
-     
-    </div>
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between">
+          
+          {/* Left Side: Text */}
+          <div className="text-sm text-gray-600 dark:text-gray-400 text-center sm:text-left">
+            <p>© 2025 TechTrio. All rights reserved.</p>
+          </div>
 
-    {/* Right Side: Social Icons */}
-    <div className="mt-4 sm:mt-0 flex space-x-4 text-xl">
-      <a
-        href="https://twitter.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition"
-      >
-        <FaTwitter />
-      </a>
-      <a
-        href="https://www.linkedin.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-600 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500 transition"
-      >
-        <FaLinkedin />
-      </a>
-      <a
-        href="https://github.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition"
-      >
-        <FaGithub />
-      </a>
-      <a
-        href="https://instagram.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition"
-      >
-        <FaInstagram />
-      </a>
-    </div>
-  </div>
-</div>
-
+          {/* Right Side: Social Icons */}
+          <div className="mt-4 sm:mt-0 flex space-x-4 text-xl">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-500 transition"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
