@@ -125,12 +125,20 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold mb-4 text-base">Location</h4>
-          <p>Vijapur, Gujarat</p>
-          <Link href="/contact" className="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded-md text-sm">
-            Contact Us
-          </Link>
-        </div>
+  <h4 className="font-semibold mb-4 text-base">Location</h4>
+  <p className="font-medium">Head Office:</p>
+  <p>F-23, Shaligeam Crown,<br />Vijapur, Mehsana - 382870</p>
+
+  <p className="mt-4 font-medium">Branch Office:</p>
+  <p>North Enclave,<br />Nr. Vaishnodevi Circle,<br />Ahmedabad - 382421</p>
+
+  <Link
+    href="/contact"
+    className="mt-6 inline-block bg-yellow-400 text-black px-4 py-2 rounded-md text-sm"
+  >
+    Contact Us
+  </Link>
+</div>
       </div>
 
       {/* TECHTRIO reveal from divider */}
